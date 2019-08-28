@@ -13,6 +13,7 @@ final class SEOPress_Frontend_To_REST_API {
             add_action( 'admin_notices', [ $this, 'admin_notice_missing_main_plugin' ] );
             return;
             }
+    }
 
     public function __construct() {
         add_action( 'plugins_loaded', [ $this, 'init' ] );
